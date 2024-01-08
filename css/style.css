@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@
   min-height: 100vh;
   padding-bottom: 14em;
   background-image: url(../images/restaurant-646678_1280.jpg);
-  background-repeat:no-repeat ;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -39,6 +40,12 @@ header {
   text-align: left;
 }
 
+#nav ul li a:hover {
+  color: black;
+  font-size: 20px;
+  transition: 1.5s;
+}
+
 #nav ul {
   list-style: none;
   padding: 0;
@@ -49,8 +56,24 @@ header {
   margin-right: 20px;
 }
 
+nav ul li:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #999; /* Color del círculo */
+  margin-left: 5px;
+  animation: bounce 1s infinite; /* Animación del círculo */
+}
+
 #nav ul li:last-child {
   margin-right: 0;
+}
+
+#nav ul li a {
+  justify-content: space-between;
+  margin: 8px;
 }
 
 .footerLogo img {
@@ -58,14 +81,10 @@ header {
   height: 200px;
 }
 
-#nav ul li a {
-  justify-content: space-between;
-  margin: 8px;
-}
 .iframe-container {
   position: relative;
   width: 100%;
-  padding-bottom: 75%; 
+  padding-bottom: 75%;
   overflow: hidden;
 }
 
@@ -77,21 +96,23 @@ header {
   width: 100%;
   height: 100%;
 }
+
 .imgindexs img {
-  width: 100%; 
-  height: auto; 
-  display: block; 
-  margin-bottom: 20px; 
-  border-radius: 10px; 
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
 }
 
 .imgindexs img:hover {
   transform: scale(1.1);
 }
+
 .imgindexs img:hover {
-  opacity: 0.8; 
+  opacity: 0.8;
 }
 
 #nav ul li a:hover {
@@ -102,7 +123,7 @@ header {
 
 li {
   color: rgb(247, 239, 239);
-  font-family: 'Vina Sans', sans-serif;
+  font-family: "Vina Sans", sans-serif;
   font-size: 30px;
   list-style: circle;
 }
@@ -112,14 +133,26 @@ h1 {
   margin: 20px;
   color: brown;
   font-size: 70px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 h2 {
   text-align: center;
   color: brown;
   font-size: 60px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.parrafo {
+  padding: 20px;
+  color: #7c7979; /* Color del texto */
+  border: 2px solid #868282; /* Borde */
+  border-radius: 8px;
+  font-family: "Arial", sans-serif;
+  font-size: 40px;
+  line-height: 1.6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: all 0.3s ease;
 }
 
 p {
@@ -133,36 +166,32 @@ p {
   margin-top: auto;
   justify-content: space-between;
   width: 100%;
-  background-color: rgb(82, 8, 8); 
-  color: white; 
-  padding: 20px 0; 
+  background-color: rgb(82, 8, 8);
+  color: white;
+  padding: 20px 0;
   display: flex;
   align-items: center;
 }
-
 
 .footerSocial {
   display: flex;
   margin-bottom: 10px;
 }
-.footerLinks img {
-  width: 100%; 
-  max-width: 200px; 
-  height: auto; 
-  margin-bottom: 10px; 
-}
 
+.footerLinks img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
 
 .footerSocial a {
   color: white;
   font-size: 1.5rem;
   margin: 0 10px;
 }
-.footerLinks
 
-
-
-.footerLinks ul {
+.footerLinks .footerLinks ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -183,9 +212,6 @@ p {
   text-decoration: none;
   font-weight: bold;
 }
-
-
-
 
 .boxImg {
   width: 500px;
@@ -243,62 +269,63 @@ p {
   height: 500px;
   border-radius: 20px;
 }
+
 /* ESTILO INDEX 1RA IMAGEN GRILLA*/
-#imgprincipal{
+#imgprincipal {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 600px;
   gap: 10px;
   grid-template-areas: "imagenprincipal";
 }
-.imagenprincipal img{
+
+.imagenprincipal img {
   width: 100%;
   height: 100%;
 }
-.imagenprincipal{
+
+.imagenprincipal {
   grid-area: imagenprincipal;
 }
+
 /* ESTILOS PAGUE CONOCENOS grillas */
 #pruebaGrid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: (4, 400px);
+  grid-template-rows: 4, 400px;
   gap: 10px;
-  grid-template-areas:
-"imagen1"
-"imagen2"
-"imagen3"
-"imagen4"
-   ;
+  grid-template-areas: "imagen1" "imagen2" "imagen3" "imagen4";
 }
+
 .boxGrid img {
   width: 100%;
   height: 100%;
 }
+
 .imagen1 {
   grid-area: imagen1;
 }
+
 .imagen2 {
   grid-area: imagen2;
 }
+
 .imagen3 {
   grid-area: imagen3;
 }
+
 .imagen4 {
   grid-area: imagen4;
 }
+
 #gridMenu {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(5,500px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 500px);
   gap: 10px;
-  grid-template-areas:
-  "gridmenu1 txtmenu1"
-  "gridmenu2 txtmenu2"
-  "gridmenu3 txtmenu3"
-  "gridmenu4 txtmenu4"
-  "gridmenu5 txtmenu5"
+  grid-template-areas: "gridmenu1 txtmenu1" "gridmenu2 txtmenu2" "gridmenu3 txtmenu3" "gridmenu4 txtmenu4" "gridmenu5 txtmenu5";
 }
+
 .boxgridmenu {
   position: relative;
   overflow: hidden;
@@ -306,28 +333,60 @@ p {
   height: 100%;
   border-radius: 10px;
 }
+
 .boxgridmenu img {
   object-fit: cover;
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 10px; 
+  border-radius: 10px;
   transition: transform 0.3s ease-in-out;
   border-radius: 10px;
 }
+
 .boxgridmenu img:hover {
-    transform: scale(1.1); 
-  }
-.gridmenu1 {grid-area: gridmenu1;}
-.gridmenu2 {grid-area: gridmenu2;}
-.gridmenu3 {grid-area: gridmenu3;}
-.gridmenu4 {grid-area: gridmenu4;}
-.gridmenu5 {grid-area: gridmenu5;}
-.txtmenu1 {grid-area: txtmenu1;}
-.txtmenu2 {grid-area: txtmenu2;}
-.txtmenu3 {grid-area: txtmenu3;}
-.txtmenu4 {grid-area: txtmenu4;}
-.txtmenu5 {grid-area: txtmenu5;}
+  transform: scale(1.1);
+}
+
+.gridmenu1 {
+  grid-area: gridmenu1;
+}
+
+.gridmenu2 {
+  grid-area: gridmenu2;
+}
+
+.gridmenu3 {
+  grid-area: gridmenu3;
+}
+
+.gridmenu4 {
+  grid-area: gridmenu4;
+}
+
+.gridmenu5 {
+  grid-area: gridmenu5;
+}
+
+.txtmenu1 {
+  grid-area: txtmenu1;
+}
+
+.txtmenu2 {
+  grid-area: txtmenu2;
+}
+
+.txtmenu3 {
+  grid-area: txtmenu3;
+}
+
+.txtmenu4 {
+  grid-area: txtmenu4;
+}
+
+.txtmenu5 {
+  grid-area: txtmenu5;
+}
 
 .txtmenu1,
 .txtmenu2,
@@ -336,8 +395,6 @@ p {
 .txtmenu5 {
   font-size: 40px;
 }
-
-
 
 table {
   width: 100%;
@@ -349,90 +406,76 @@ th, td {
   border: 1px solid #ddd;
   padding: 12px;
   text-align: left;
-  font-size: 16px; 
-  color: #fff; 
+  font-size: 16px;
+  color: #fff;
 }
 
 th {
   background-color: #060606;
-  font-size: 18px; 
-
-thead th {
+  font-size: 18px;
+  /* Estilo para dispositivos móviles */
+}
+th thead th {
   background-color: #e6e6e6;
   font-weight: bold;
 }
-
-tfoot th {
+th tfoot th {
   background-color: #b59b68;
-  font-size: 18px; 
+  font-size: 18px;
 }
-
-tfoot th[colspan="2"] {
+th tfoot th[colspan="2"] {
   text-align: center;
 }
-/* Estilo para dispositivos móviles */
 @media screen and (max-width: 768px) {
-  li {
+  th li {
     font-size: 24px;
   }
-
-  h1 {
+  th h1 {
     font-size: 40px;
   }
-
-  
-  .boxImg,
-  .boxImg2,
-  .boxImg3 {
+  th .boxImg,
+  th .boxImg2,
+  th .boxImg3 {
     width: 80%;
-    margin: auto; 
+    margin: auto;
   }
-
-  
-  #pruebaGrid {
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto; 
+  th #pruebaGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     gap: 5px;
   }
-
-  .boxGrid img {
-    width: 100%; 
-    height: auto; 
+  th .boxGrid img {
+    width: 100%;
+    height: auto;
   }
-  #footer {
+  th #footer {
     flex-direction: column;
   }
-
 }
-@media (min-width:768px) and (orientation: landscape)    {}
-
-
-
-#carouselExample{
+th #carouselExample {
   width: 100%;
   height: 50%;
 }
-
 @media screen and (max-width: 768px) {
-  .txtmenu1,
-  .txtmenu2,
-  .txtmenu3,
-  .txtmenu4,
-  .txtmenu5 {
+  th .txtmenu1,
+  th .txtmenu2,
+  th .txtmenu3,
+  th .txtmenu4,
+  th .txtmenu5 {
     font-size: 21px;
   }
 }
-}
+
 @media screen and (max-width: 768px) {
   th, td {
-    font-size: 14px; 
+    font-size: 14px;
   }
-  
   th {
-    font-size: 16px; 
+    font-size: 16px;
   }
-  
   tfoot th {
-    font-size: 16px; 
+    font-size: 16px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
