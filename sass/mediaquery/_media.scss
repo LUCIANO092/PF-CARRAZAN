@@ -73,3 +73,18 @@
       width: 100%; 
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .caja {
+    width: 90%;
+    height: auto; 
+    padding: 20px; 
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .iframe-container {
+    padding-bottom: 50%; }
+}
