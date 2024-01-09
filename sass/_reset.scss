@@ -1,0 +1,19 @@
+/* reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #body {
+    position: relative;
+    margin: 0;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100vh;
+    padding-bottom: 14em;
+    background-image: url(../images/restaurant-646678_1280.jpg);
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+  }

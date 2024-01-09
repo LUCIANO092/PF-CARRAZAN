@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px; 
+    color: #fff; 
+  }
+  
+  th {
+    background-color: #060606;
+    font-size: 18px; 
+  
+  thead th {
+    background-color: #e6e6e6;
+    font-weight: bold;
+  }
+  
+  tfoot th {
+    background-color: #b59b68;
+    font-size: 18px; 
+  }
+  
+  tfoot th[colspan="2"] {
+    text-align: center;
+  }
+}

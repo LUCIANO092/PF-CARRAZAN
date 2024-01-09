@@ -1,0 +1,54 @@
+#gridMenu {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,500px);
+    gap: 10px;
+    grid-template-areas:
+    "gridmenu1 txtmenu1"
+    "gridmenu2 txtmenu2"
+    "gridmenu3 txtmenu3"
+    "gridmenu4 txtmenu4"
+    "gridmenu5 txtmenu5"
+  }
+  .boxgridmenu {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .boxgridmenu img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; 
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  .boxgridmenu img:hover {
+      transform: scale(1.1); 
+    }
+  .gridmenu1 {grid-area: gridmenu1;}
+  .gridmenu2 {grid-area: gridmenu2;}
+  .gridmenu3 {grid-area: gridmenu3;}
+  .gridmenu4 {grid-area: gridmenu4;}
+  .gridmenu5 {grid-area: gridmenu5;}
+  .txtmenu1 {grid-area: txtmenu1;}
+  .txtmenu2 {grid-area: txtmenu2;}
+  .txtmenu3 {grid-area: txtmenu3;}
+  .txtmenu4 {grid-area: txtmenu4;}
+  .txtmenu5 {grid-area: txtmenu5;}
+  
+  .txtmenu1,
+  .txtmenu2,
+  .txtmenu3,
+  .txtmenu4,
+  .txtmenu5 {
+    font-size: 40px;
+    color: #101010e3; 
+    font-family: Arial, sans-serif; 
+    font-style: italic; 
+  }
+  
+  
