@@ -85,6 +85,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  .iframe-container {
-    width: 95%; }
+  .contenedor-iframe {
+    width: 95%; 
+    height: 400px;
+  }
 }

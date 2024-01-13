@@ -516,8 +516,9 @@ header {
   }
 }
 @media screen and (max-width: 768px) {
-  .iframe-container {
+  .contenedor-iframe {
     width: 95%;
+    height: 400px;
   }
 }
 table {
