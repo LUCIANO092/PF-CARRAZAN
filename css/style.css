@@ -54,6 +54,13 @@
   transform: scale(1.2);
 }
 
+#pruebaGrid p {
+  font-size: 46px; /* Tamaño de fuente */
+  line-height: 1.5; /* Altura de línea */
+  color: #333; /* Color de texto */
+  background-color: antiquewhite;
+}
+
 .contenedor-iframe {
   max-width: 100%;
   overflow: hidden;
