@@ -8,8 +8,12 @@
     width: 100%;
     height: 100%;
   }
+  .parrafo {
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black; 
+  }
   .imgindexs img {
-    margin-left: 100px;
+    margin-left: 20px;
     align-items: center;
     width: 90%; 
     height: auto; 

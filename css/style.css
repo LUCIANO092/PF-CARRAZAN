@@ -208,8 +208,13 @@ p {
   height: 100%;
 }
 
+.parrafo {
+  -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
+}
+
 .imgindexs img {
-  margin-left: 100px;
+  margin-left: 20px;
   align-items: center;
   width: 90%;
   height: auto;
@@ -397,9 +402,10 @@ p {
 .txtmenu4,
 .txtmenu5 {
   font-size: 40px;
-  color: rgba(16, 16, 16, 0.8901960784);
+  color: black;
   font-family: Arial, sans-serif;
   font-style: italic;
+  -webkit-text-stroke: 2px rgb(82, 80, 80);
 }
 
 #nav {
@@ -481,6 +487,9 @@ header {
   h1 {
     font-size: 40px;
   }
+  .parrafo {
+    font-size: 21px;
+  }
   .boxImg,
   .boxImg2,
   .boxImg3 {
@@ -545,6 +554,12 @@ header {
   .contenedor-iframe {
     width: 95%;
     height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .imgindexs img {
+    margin-left: 20px;
+    max-width: 90%;
   }
 }
 table {

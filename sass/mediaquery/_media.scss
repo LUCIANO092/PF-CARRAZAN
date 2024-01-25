@@ -7,6 +7,10 @@
     h1 {
       font-size: 40px;
     }
+
+    .parrafo {
+      font-size: 21px;
+    }
   
     
     .boxImg,
@@ -90,4 +94,12 @@
     width: 95%; 
     height: 400px;
   }
+}
+@media screen and (max-width: 768px )
+{
+  .imgindexs img {
+    margin-left: 20px;
+    max-width: 90%;
+  }
+
 }
